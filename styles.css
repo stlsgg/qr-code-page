@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --bg-color: rgb(15, 17, 31);
+    --bg-qr-code-color: rgb(39, 42, 66);
+    --corner-radius: 30px;
+    --fg-color: rgb(189, 189, 189);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+p {
+    color: var(--fg-color);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    border-radius: var(--corner-radius);
+    /* box-shadow: 0 0 5px var(--fg-color); */
+    background-color: var(--bg-qr-code-color);
+    width: 340px;
+    height: 500px;
+}
+
+.qr-code__bg-image-container {
+    background-color: var(--bg-color);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: var(--corner-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code__image {
+    color: var(--fg-color);
+}
+
+.qr-code__text-container {
+    width: 80%;
+    margin: 25px 0;
+}
+
+.title__bold {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    background: none;
+    width: 60%;
+    color: var(--fg-color);
+}
