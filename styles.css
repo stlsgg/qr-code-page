@@ -3,7 +3,7 @@
 :root {
     --bg-color: rgb(15, 17, 31);
     --bg-qr-code-color: rgb(39, 42, 66);
-    --corner-radius: 30px;
+    --corner-radius: 21px;
     --fg-color: rgb(189, 189, 189);
 }
 
@@ -31,21 +31,20 @@ p {
 .qr-code__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     margin: 50px;
     border-radius: var(--corner-radius);
-    /* box-shadow: 0 0 5px var(--fg-color); */
     background-color: var(--bg-qr-code-color);
-    width: 340px;
-    height: 500px;
+    width: min-content;
+    height: min-content;
 }
 
 .qr-code__bg-image-container {
     background-color: var(--bg-color);
-    width: 300px;
-    height: 300px;
-    margin: 20px;
+    width: 330px;
+    height: 330px;
+    margin: 18px;
     border-radius: var(--corner-radius);
     display: flex;
     justify-content: center;
@@ -58,7 +57,7 @@ p {
 
 .qr-code__text-container {
     width: 80%;
-    margin: 25px 0;
+    margin-bottom: 25px;
 }
 
 .title__bold {
@@ -69,11 +68,11 @@ p {
 
 .description {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
-img {
-    background: none;
-    width: 60%;
+a {
     color: var(--fg-color);
+    font-weight: 600;
+    text-decoration-line: none;
 }
